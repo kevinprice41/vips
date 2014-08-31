@@ -1,43 +1,99 @@
 /* Getting the new tags to behave */
-article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
-mark, rp, rt, ruby, summary, time{ display: inline }
+article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video
+	{
+	display: block;
+}
+
+mark,rp,rt,ruby,summary,time {
+	display: inline
+}
 
 /* Global properties ======================================================== */
-body { 
-	background: url(../images/body-bg.gif) 0 0 repeat-x #fff; 
+body {
+	background: url(../images/body-bg.gif) 0 0 repeat-x #fff;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px; 
+	font-size: 14px;
 	line-height: 17px;
 	color: #939393;
 	min-width: 1000px;
 }
-html, body { height: 100%;}
 
-p { padding-top: 17px; }
+html,body {
+	height: 100%;
+}
 
-.top { padding-top: 4px; }
-.top1 { padding-top: 11px; }
-.top2 { padding-top: 26px !important; }
-.top3 { padding-top: 7px; }
-.top4 { padding-top: 0px; }
-.top5 { padding-top: 0px; }
+p {
+	padding-top: 17px;
+}
 
-.bot { padding-bottom: 12px; }
+.top {
+	padding-top: 4px;
+}
 
-.bottom {padding-bottom: 39px;}
+.top1 {
+	padding-top: 11px;
+}
 
-.img-bot {padding-bottom: 8px;}
+.top2 {
+	padding-top: 26px !important;
+}
 
-.img-pad {margin-top: -55px;}
-.img-padding {padding: 4px 0 0 2px;}
+.top3 {
+	padding-top: 7px;
+}
 
-.h-pad {padding: 37px 0 18px;}
-.h-bot {padding-bottom: 18px;}
-.h-top {padding-top: 38px;}
-.h-top1 {padding-top: 34px;}
+.top4 {
+	padding-top: 0px;
+}
 
-a {	color: #d52d00; outline: none; }
-a:hover{ text-decoration: none; }
+.top5 {
+	padding-top: 0px;
+}
+
+.bot {
+	padding-bottom: 12px;
+}
+
+.bottom {
+	padding-bottom: 39px;
+}
+
+.img-bot {
+	padding-bottom: 8px;
+}
+
+.img-pad {
+	margin-top: -55px;
+}
+
+.img-padding {
+	padding: 4px 0 0 2px;
+}
+
+.h-pad {
+	padding: 37px 0 18px;
+}
+
+.h-bot {
+	padding-bottom: 18px;
+}
+
+.h-top {
+	padding-top: 38px;
+}
+
+.h-top1 {
+	padding-top: 34px;
+}
+
+a {
+	color: #d52d00;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
 
 /* Global Structure ============================================================= */
 .main {
@@ -45,40 +101,55 @@ a:hover{ text-decoration: none; }
 	width: 952px;
 }
 
-	/* Header */
-	header{
-		height: 398px;
-	}
-	
-	/* Content */
-	section#content {
-		padding-bottom: 39px;
-	}			
-	/* Footer */
-	footer{
-		height: 108px;
-		background: #f5f5f5;
-	}
+/* Header */
+header {
+	height: 398px;
+}
+
+/* Content */
+section#content {
+	padding-bottom: 39px;
+}
+/* Footer */
+footer {
+	height: 108px;
+	background: #f5f5f5;
+}
 /* Left & Right alignment */
+.fleft {
+	float: left;
+}
 
-.fleft { float: left;}
-.fright { float: right;}
-.clear { clear: both;}
+.fright {
+	float: right;
+}
 
-.col-1, .col-2, .col-3, .col-4, .col-5 { float: left;}
+.clear {
+	clear: both;
+}
 
-.alignright { text-align: right;}
-.aligncenter { text-align: center;}
+.col-1,.col-2,.col-3,.col-4,.col-5 {
+	float: left;
+}
 
-.wrapper { 
+.alignright {
+	text-align: right;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.wrapper {
 	width: 100%;
 	overflow: hidden;
 }
+
 .container {
 	width: 100%;
 }
 /*----- form defaults -----*/
-input, select, textarea { 
+input,select,textarea {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	vertical-align: middle;
@@ -86,9 +157,19 @@ input, select, textarea {
 }
 
 /*----- other -----*/
-.img-indent { margin: 0 28px 0 0; float: left; }
-.extra-wrap { overflow: hidden; }
-.phone { display: inline-block;	width: 74px; }
+.img-indent {
+	margin: 0 28px 0 0;
+	float: left;
+}
+
+.extra-wrap {
+	overflow: hidden;
+}
+
+.phone {
+	display: inline-block;
+	width: 74px;
+}
 
 /*=============================================================================== text =====*/
 h1 {
@@ -100,16 +181,18 @@ h1 {
 	height: 167px;
 	width: 282px;
 }
-	h1 a {
-		text-indent: -5000px;
-		display: block;
-		/*background: url(../images/logo.jpg) 0 0 no-repeat;*/
-		/*background: url(../images/vips/vipsbw125_98.jpg) 0 0 no-repeat;*/
-		background: url(../images/vips/vipslogoweb_218_100.jpg) 0 0 no-repeat;
-		width: 218px;
-		height: 100px;
-		margin: 34px 0 0 32px;
-	}
+
+h1 a {
+	text-indent: -5000px;
+	display: block;
+	/*background: url(../images/logo.jpg) 0 0 no-repeat;*/
+	/*background: url(../images/vips/vipsbw125_98.jpg) 0 0 no-repeat;*/
+	background: url(../images/vips/vipslogoweb_218_100.jpg) 0 0 no-repeat;
+	width: 218px;
+	height: 100px;
+	margin: 34px 0 0 32px;
+}
+
 h2 {
 	font-size: 31px;
 	line-height: 1.2em;
@@ -131,13 +214,14 @@ h5 {
 	letter-spacing: -1px;
 	padding: 25px 0 15px 0;
 }
-	h5 span {
-		display: block;
-		font-size: 40px;
-		line-height: 1.2307em;
-		letter-spacing: -1px;
-		margin-top: -10px;
-	}
+
+h5 span {
+	display: block;
+	font-size: 40px;
+	line-height: 1.2307em;
+	letter-spacing: -1px;
+	margin-top: -10px;
+}
 
 .text {
 	line-height: 19px;
@@ -145,40 +229,72 @@ h5 {
 	font-size: 13px;
 }
 
-.color {color: #ffa200;}
+.color {
+	color: #ffa200;
+}
 /*=================================================================================================================== header =====*/
 /*=============================================================================== nav =====*/
 header nav {
-	float: right; 
+	float: right;
 	width: 642px;
 }
-	header nav li {
-		float: left;
-		font-size: 15px;
-		line-height: 1.2307em;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-		header nav li a {
-			display: block;
-			color: white;
-			text-decoration: none;
-			text-transform: uppercase;
-			background: #9bba1f;
-			font-weight: bold;
-		}
-			header nav li a:hover {
-				padding-bottom: 36px;
-				cue-before: url(../sounds/sound4.mp3);
-				cue-after:  url(../sounds/sound4.mp3);				
-			}
-	header nav .n1 a {background: #9bba1f; padding: 32px 9px 27px 10px;}
-	header nav .n2 a {background: #ffa200; padding: 32px 7px 27px 8px;}
-	header nav .n3 a {background: #ca3535; padding: 32px 7px 27px 8px;}
-	header nav .n4 a {background: #15c1e5; padding: 32px 9px 27px 10px;}
-	header nav .n5 a {background: #9bba1f; padding: 32px 10px 27px 9px;}
-	header nav .n6 a {background: #ffa200; padding: 32px 8px 27px 8px;}
-	
-	header nav .n1 .active, header nav .n2 .active, header nav .n3 .active, header nav .n4 .active, header nav .n5 .active, header nav .n6 .active {padding-bottom: 36px;}
+
+header nav li {
+	float: left;
+	font-size: 15px;
+	line-height: 1.2307em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+header nav li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #9bba1f;
+	font-weight: bold;
+}
+
+header nav li a:hover {
+	padding-bottom: 36px;
+	cue-before: url(../sounds/sound4.mp3);
+	cue-after: url(../sounds/sound4.mp3);
+}
+
+header nav .n1 a {
+	background: #9bba1f;
+	padding: 32px 9px 27px 10px;
+}
+
+header nav .n2 a {
+	background: #ffa200;
+	padding: 32px 7px 27px 8px;
+}
+
+header nav .n3 a {
+	background: #ca3535;
+	padding: 32px 7px 27px 8px;
+}
+
+header nav .n4 a {
+	background: #15c1e5;
+	padding: 32px 9px 27px 10px;
+}
+
+header nav .n5 a {
+	background: #9bba1f;
+	padding: 32px 10px 27px 9px;
+}
+
+header nav .n6 a {
+	background: #ffa200;
+	padding: 32px 8px 27px 8px;
+}
+
+header nav .n1 .active,header nav .n2 .active,header nav .n3 .active,header nav .n4 .active,header nav .n5 .active,header nav .n6 .active
+	{
+	padding-bottom: 36px;
+}
 /*=================================================================================================================== content =====*/
 
 /*=============================================================================== indents =====*/
@@ -186,31 +302,71 @@ header nav {
 	padding: 0 0 7px 34px;
 }
 
-.indent { padding: 0px 0px 0px 33px }
-.indent1 { padding: 0px 0px 0px 0px }
+.indent {
+	padding: 0px 0px 0px 33px
+}
+
+.indent1 {
+	padding: 0px 0px 0px 0px
+}
 /*=============================================================================== col-indents =====*/
-.col-indent { padding-right: 17px; }
-.col-indent1 { padding-right: 52px; }
-.col-indent2 { padding-right: 30px; }
+.col-indent {
+	padding-right: 17px;
+}
+
+.col-indent1 {
+	padding-right: 52px;
+}
+
+.col-indent2 {
+	padding-right: 30px;
+}
 /*=============================================================================== boxes =====*/
 .box {
 	background: #9bba1f;
 	color: white;
-	padding: 0 0px 0px 31px; 
+	padding: 0 0px 0px 31px;
 	position: relative;
 }
 
-.bg2 {background: #ffa200;}
-.bg3 {background: #ca3535;}
+.bg2 {
+	background: #ffa200;
+}
 
-.box .indent {padding: 0 34px 36px 2px;}
-.box .indent1 {padding: 5px 31px 36px 2px;}
-.box .indent1-1 {padding: 0px 31px 36px 2px;}
-.box .indent2 {padding: 2px 31px 36px 2px;}
+.bg3 {
+	background: #ca3535;
+}
 
-.bg1 .link {color: #92ad26;	background: #fff;}
-.bg2 .link {color: #ffa200;	background: #fff;}
-.bg3 .link {color: #ca3535;	background: #fff;}
+.box .indent {
+	padding: 0 34px 36px 2px;
+}
+
+.box .indent1 {
+	padding: 5px 31px 36px 2px;
+}
+
+.box .indent1-1 {
+	padding: 0px 31px 36px 2px;
+}
+
+.box .indent2 {
+	padding: 2px 31px 36px 2px;
+}
+
+.bg1 .link {
+	color: #92ad26;
+	background: #fff;
+}
+
+.bg2 .link {
+	color: #ffa200;
+	background: #fff;
+}
+
+.bg3 .link {
+	color: #ca3535;
+	background: #fff;
+}
 /*=============================================================================== line-hor =====*/
 
 /*=============================================================================== lists =====*/
@@ -221,27 +377,39 @@ header nav {
 	margin-bottom: -1px;
 	position: relative;
 }
-	.list li {
-		font-size: 13px;
-		line-height: 18px;
-		background: url(../images/list-border.gif) 0 bottom repeat-x;
-		padding: 8px 0 6px;
-	}
-		.list li a {
-			color: #fff;
-			font-weight: bold;
-			text-decoration: none;
-			text-transform: uppercase;
-			background: url(../images/list-a-bg.png) 1px 1px no-repeat;
-			padding: 7px 0 9px 35px;
-			display: inline-block;
-		}
-			.list li a:hover {
-				color: #000;
-			}
-	.list .long a {padding-bottom: 1px;}
-	.list .last {background: none;}
-.bg3 .list li a {background: url(../images/bg-2-list-a-bg.gif) 1px 1px no-repeat;}
+
+.list li {
+	font-size: 13px;
+	line-height: 18px;
+	background: url(../images/list-border.gif) 0 bottom repeat-x;
+	padding: 8px 0 6px;
+}
+
+.list li a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: url(../images/list-a-bg.png) 1px 1px no-repeat;
+	padding: 7px 0 9px 35px;
+	display: inline-block;
+}
+
+.list li a:hover {
+	color: #000;
+}
+
+.list .long a {
+	padding-bottom: 1px;
+}
+
+.list .last {
+	background: none;
+}
+
+.bg3 .list li a {
+	background: url(../images/bg-2-list-a-bg.gif) 1px 1px no-repeat;
+}
 /*=============================================================================== links =====*/
 .link {
 	font-size: 18px;
@@ -257,15 +425,21 @@ header nav {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-	.link:hover {color: #474b53;}
+
+.link:hover {
+	color: #474b53;
+}
 
 .link_1 {
 	text-transform: uppercase;
-	color:#ffa200;
+	color: #ffa200;
 	font-size: 13px;
 	text-decoration: none;
 }
-	.link_1:hover {text-decoration: underline;}
+
+.link_1:hover {
+	text-decoration: underline;
+}
 /*=============================================================================== nav =====*/
 
 /*=============================================================================== nav =====*/
@@ -278,23 +452,26 @@ footer {
 	line-height: 18px;
 }
 /*=============================================================================== nav =====*/
-footer nav { 
+footer nav {
 	padding: 31px 0 0 0;
 }
-	footer nav li {
-		float: left;
-		padding-right: 23px
-	}
-		footer nav li a {
-			display: block;
-			color: white;
-			text-decoration: none;
-			text-transform: uppercase;
-			color: #aeaeac;
-		}
-			footer nav li a:hover {
-				text-decoration: underline;
-			}
+
+footer nav li {
+	float: left;
+	padding-right: 23px
+}
+
+footer nav li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #aeaeac;
+}
+
+footer nav li a:hover {
+	text-decoration: underline;
+}
 
 footer p {
 	width: 100%;
@@ -303,54 +480,63 @@ footer p {
 	text-transform: uppercase;
 	color: #aeaeac;
 }
-	footer p a {
-		color: #42cce8;
-		text-decoration: none;
-		padding-left: 11px;
-	}
-		footer p a:hover {text-decoration: underline;}
-/*------------------------------------------------------------------------------------------------------------------- forms -----*/
 
+footer p a {
+	color: #42cce8;
+	text-decoration: none;
+	padding-left: 11px;
+}
+
+footer p a:hover {
+	text-decoration: underline;
+}
+/*------------------------------------------------------------------------------------------------------------------- forms -----*/
 #ContactForm {
-	padding-top:16px;
+	padding-top: 16px;
 	width: 584px;
 }
-	#ContactForm label {
-		height:64px; 
-		display:block;
-	}
-	#ContactForm .link {
-		margin:12px 0px 0px 17px;
-	}
-	#ContactForm .column1 {
-		float:left;
-		width:293px;
-	}
-	#ContactForm .column2 {
-		float:left;
-		width:291px;
-	}
-	#ContactForm .input {
-		width:261px; 
-		border: 1px solid #aeaeac; 
-		background: none;
-		padding:7px 5px 7px 5px;
-		font-size:12px; 
-		line-height:14px;
-		color:#a4a4a4;
-	}
-	#ContactForm textarea {
-		width:279px;
-		height:142px; 
-		border: 1px solid #aeaeac; 
-		background: none;
-		padding:7px 5px 7px 5px;
-		overflow:auto;
-		font-size:1em;
-		color:#a4a4a4;
-	}
+
+#ContactForm label {
+	height: 64px;
+	display: block;
+}
+
+#ContactForm .link {
+	margin: 12px 0px 0px 17px;
+}
+
+#ContactForm .column1 {
+	float: left;
+	width: 293px;
+}
+
+#ContactForm .column2 {
+	float: left;
+	width: 291px;
+}
+
+#ContactForm .input {
+	width: 261px;
+	border: 1px solid #aeaeac;
+	background: none;
+	padding: 7px 5px 7px 5px;
+	font-size: 12px;
+	line-height: 14px;
+	color: #a4a4a4;
+}
+
+#ContactForm textarea {
+	width: 279px;
+	height: 142px;
+	border: 1px solid #aeaeac;
+	background: none;
+	padding: 7px 5px 7px 5px;
+	overflow: auto;
+	font-size: 1em;
+	color: #a4a4a4;
+}
 
 /*==========================================*/
-    
+
 /* Project specifics =========================================================== */
 /* Pour some CSS below ========================================================= */

@@ -14,6 +14,10 @@
 	background: #15c1e5;
 }
 
+.yellow {
+	background: #ffa200;
+}
+
 .navbar-nav>li>a {
 	color: #FFFFFF;
 }
@@ -26,8 +30,63 @@
 	background-color: #1f9fba;
 }
 
+.center-container {
+	margin: 0px 0px 0px 0px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #FFFFFF;
+	min-height: 400px;
+	border-width: 5px;
+}
+
+.picborder {
+	border: 10px;
+	border-color: #1f9fba;
+}
+
 .jumbotron {
-  background-color: #FFFFFF;
-  padding: 0px 0px 0px 0px;
-  margin-bottom: 0px;
+	background-color: #FFFFFF;
+	padding: 0px 0px 0px 0px;
+	margin-bottom: 0px;
+}
+
+.no-padding{
+	padding: 0px 0px 0px 0px;
+}
+.navbar-brand {
+	padding: 0px 0px;
+	border: 2px;
+	border-color: #1f9fba;
+}
+
+@media ( min-width : 768px) {
+	.pc {
+		
+	}
+	.mobile {
+		height: 0px;
+		width: 0px;
+		font-size: 0px;
+	}
+}
+
+@media ( max-width : 768px) {
+	.pc {
+		height: 0px;
+		width: 0px;
+		font-size: 0px;
+	}
+	.moblie {
+		
+	}
+}
+
+.carousel {
+	height: 500px;
+	margin-bottom: 30px;
+}
+
+.container {
+	padding-right: 0px;
+	padding-left: 0px;
 }
