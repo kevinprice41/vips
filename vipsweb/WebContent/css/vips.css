@@ -14,11 +14,11 @@
 	background: #15c1e5;
 }
 
-.blue-font{
+.blue-font {
 	color: #15c1e5;
 }
 
-.grey{
+.grey {
 	background: #aeaeac;
 }
 
@@ -116,22 +116,45 @@
 	margin-left: 2px;
 }
 
-.jumbo-padding{
+.jumbo-padding {
 	padding: 10px 10px 10px 10px;
 }
 
-h2{
+h2 {
 	margin-top: 0px;
 }
 
-*{font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;}
+* {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
 
-
-.col-lg-4{
+.col-lg-4 {
 	padding-top: 15px;
 }
 
-
 footer {
 	background: #FFFFFF;
+	margin-top: 20px;
+}
+
+.vips-h2 {
+	margin-top: 20px;
+}
+
+.featurette-divider {
+	margin: 40px 0;
+}
+
+.vips-highlight{
+	height: 500px;
+}
+
+.vips-highlight-image{
+	max-height: 250px;
+	max-width: 250px;
+}
+
+.vips-navbar-header-logo{
+	width: 115px;
+	margin-left: 15px;
 }
