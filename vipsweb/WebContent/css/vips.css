@@ -113,7 +113,7 @@
 .container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse
 	{
 	margin-right: 2px;
-	margin-left: 2px;
+	margin-left: 15px;
 }
 
 .jumbo-padding {
@@ -139,22 +139,33 @@ footer {
 
 .vips-h2 {
 	margin-top: 20px;
+	font-weight: bolder;
 }
 
 .featurette-divider {
 	margin: 40px 0;
 }
 
-.vips-highlight{
+.vips-highlight {
 	height: 500px;
 }
 
-.vips-highlight-image{
+.vips-highlight-image {
 	max-height: 250px;
 	max-width: 250px;
+	margin-bottom: 5px;
 }
 
-.vips-navbar-header-logo{
-	width: 115px;
-	margin-left: 15px;
+@media ( min-width : 768px) {
+	.vips-navbar-header-logo {
+		width: 115px;
+		margin-right: 45px;
+	}
+}
+
+@media ( max-width : 768px) {
+	.vips-navbar-header-logo {
+		width: 98%;
+		height: 50px;
+	}
 }
