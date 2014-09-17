@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: "http://vips.org/cm/?json=get_recent_posts&category_name=Features"
+            }).then(function(data, status, jqxhr) {
+               $('.greeting-id').append(data.posts[0].id);
+               $('.greeting-content').append(data.posts[1].id);
+               console.log(jqxhr);
+            });
+        });        
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <p class="greeting-id">The ID is </p>
+            <p class="greeting-content">The content is </p>
+        </div>
+        <h4>Response headers:</h4>
+        <div class="response-headers">
+        </div>
+    </body>
+</html>

@@ -19,6 +19,8 @@
 <link href="css/carousel.css" rel="stylesheet">
 <link href="css/vips.css" rel="stylesheet">
 
+
+
 </head>
 
 <body>
@@ -70,50 +72,28 @@
 
 			<!-- Three columns of text below the carousel -->
 			<div class="row">
-				<div class="col-lg-4 green center-margin vips-highlight">
-					<img class="img-rounded vips-highlight-image" src="images/stamp110.jpg"
-						alt="2014 Dr. Mark Lynn & Associates Stampede for VIPS" />
-					<h2>2014 Dr. Mark Lynn & Associates Stampede for VIPS</h2>
-					<p>The 12th Annual Dr. Mark Lynn & Associates Stampede for
-						VIPS, presented by Ford, the Louisville Downtown Lions Club,
-						PrintTex and Texas Roadhouse, is a family-friendly walk/run on
-						Saturday, September 13th at Papa John’s Cardinal Stadium.</p>
-					<p>
-						<a class="btn btn-default"
-							href="https://vips.ejoinme.org/?tabid=543176" role="button">View
-							details &raquo;</a>
-					</p>
-				</div>
+				<div id="feature1"
+					class="col-lg-4 green center-margin vips-highlight"></div>
 				<!-- /.col-lg-4 -->
-				<div class="col-lg-4 yellow center-margin vips-highlight">
-					<img class="img-rounded vips-highlight-image"
-						src="images/D8F1170D-5395-42C9-A056-D7BC4ADA6959.jpg"
-						alt="2014 Family Retreat" />
-					<h2>2014 Family Retreat Saturday, September 27, 2014</h2>
-					<p>This year's retreat will be all about you, the parents and
-						caregivers. We will learn how to take care of ourselves. We give
-						so much to our children because that is what we do as parents. But
-						sometimes we forget to take care of ourselves. We will have
-						speakers and talks about how to take care of us! .</p>
-					<p>
-						<a class="btn btn-default" href="https://vips.ejoinme.org/MyEvents/2014FamilyRetreat/tabid/548543/Default.aspx" role="button">View details
-							&raquo;</a>
-					</p>
-				</div>
+				<div id="feature2"
+					class="col-lg-4 yellow center-margin vips-highlight"></div>
 				<!-- /.col-lg-4 -->
-				<div class="col-lg-4 red center-margin vips-highlight">
-					<img class="img-rounded vips-highlight-image"
-						src="images/ccmtblv2.png"
-						alt="DONATE TO VIPS WITH AMAZON SMILE" />
-					<h2>DONATE TO VIPS WITH AMAZON SMILE</h2>
-						<a class="btn btn-default" href="#" role="button">View details
-							&raquo;</a>
-					</p>
+				<div id="feature3" class="col-lg-4 red center-margin vips-highlight">
+
 				</div>
 				<!-- /.col-lg-4 -->
 			</div>
 			<!-- /.row -->
 
+			<script>
+        	$.ajax({
+        		url: "http://vips.org/cm/?json=get_recent_posts&category_name=Features"
+        	}).then(function(data, status, jqxhr) {
+        		$('#feature1').append(data.posts[0].content);
+        		$('#feature2').append(data.posts[1].content);
+        		$('#feature3').append(data.posts[2].content);
+        	});
+            </script>
 
 			<!-- START THE FEATURETTES -->
 
@@ -146,9 +126,9 @@
 				</div>
 				<div class="col-md-7">
 					<h2 class="featurette-heading vips-h2">
-						<span class="text-muted">You've learned that your child has a serious
-						vision problem. </span>
-					</h2>				
+						<span class="text-muted">You've learned that your child has
+							a serious vision problem. </span>
+					</h2>
 					<p class="lead">It is not uncommon to experience a number of
 						emotions, such as grief, fear, sadness, and even anger. You may
 						feel a sense of loss because you believe that the dreams or
@@ -170,17 +150,17 @@
 			<div class="row featurette">
 				<div class="col-md-7">
 					<h2 class="featurette-heading vips-h2">
-						<span class="text-muted">Visually Impaired Preschool Services </span>
-					</h2>					
-					<p class="lead"> is an
-						agency (VIPS) that has been designed to help you and your child
-						through these very important early years when children are so ripe
-						for learning. Without sight, your child will need to gather
-						information about the world in different ways. VIPS will show you
-						how to help your child use remaining vision and other senses to
-						learn about the world. We want to help you feel good about your
-						child and to help your child build the self-esteem that will be so
-						necessary for the progress he or she will make.</p>
+						<span class="text-muted">Visually Impaired Preschool
+							Services </span>
+					</h2>
+					<p class="lead">is an agency (VIPS) that has been designed to
+						help you and your child through these very important early years
+						when children are so ripe for learning. Without sight, your child
+						will need to gather information about the world in different ways.
+						VIPS will show you how to help your child use remaining vision and
+						other senses to learn about the world. We want to help you feel
+						good about your child and to help your child build the self-esteem
+						that will be so necessary for the progress he or she will make.</p>
 
 				</div>
 				<div class="col-md-5">
@@ -200,10 +180,10 @@
 				</div>
 				<div class="col-md-7">
 					<h2 class="featurette-heading vips-h2">
-						<span class="text-muted">VIPS provides a variety of programs and
-						services.</span>
+						<span class="text-muted">VIPS provides a variety of
+							programs and services.</span>
 					</h2>
-					<p class="lead"> VIPS serves blind or visually impaired infants,
+					<p class="lead">VIPS serves blind or visually impaired infants,
 						toddlers, and preschoolers who live within a 50-mile radius of
 						Louisville, including several counties in Southern Indiana,
 						through the VIPS-Louisville Office. Children, who live in central
@@ -213,7 +193,7 @@
 						Office, including Bloomington, Bedford, Columbus, and
 						Indianapolis.VIPS also has an Outreach Program to serve children
 						and families who reside in other areas throughout Kentucky and
-						Indiana.</p>				
+						Indiana.</p>
 					<p class="lead">VIPS staff includes certified teachers who
 						specialize in early childhood education, visual impairment, O&M,
 						and special education. Several staff members are also parents of
@@ -246,5 +226,6 @@
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
 	<script src="js/vips.js"></script>
+	<script src="js/home.js"></script>
 </body>
 </html>
